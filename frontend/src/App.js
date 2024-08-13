@@ -8,6 +8,7 @@ import TeacherDashboard from './pages/teacher/TeacherDashboard';
 import LoginPage from './pages/LoginPage';
 import AdminRegisterPage from './pages/admin/AdminRegisterPage';
 import ChooseUser from './pages/ChooseUser';
+import AboutUs from './pages/AboutUs'; // Import the About Us component
 
 const App = () => {
   const { currentRole } = useSelector(state => state.user);
@@ -25,6 +26,8 @@ const App = () => {
           <Route path="/Teacherlogin" element={<LoginPage role="Teacher" />} />
 
           <Route path="/Adminregister" element={<AdminRegisterPage />} />
+
+          <Route path="/about-us" element={<AboutUs />} /> {/* Add the About Us route */}
 
           <Route path='*' element={<Navigate to="/" />} />
         </Routes>}
@@ -50,4 +53,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

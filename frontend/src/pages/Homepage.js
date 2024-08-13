@@ -17,14 +17,14 @@ const Homepage = () => {
                         <StyledTitle>
                             Welcome to
                             <br />
-                            School Management
+                           SERAMONO School Management
                             <br />
                             System
                         </StyledTitle>
                         <StyledText>
-                            Streamline school management, class organization, and add students and faculty.
-                            Seamlessly track attendance, assess performance, and provide feedback.
-                            Access records, view marks, and communicate effortlessly.
+                            እኛ የሴራሞኖ ፕራይመሪ ትምህርት ቤት ነን። የትምህርት ቤትን አስተዳደር፣ የክፍል ድርጅትና ተማሪዎችንና አስተማሪዎችን አክል።
+                            መገኘትን በቀላሉ አድምጥ፣ አፈፃፀምን አድምጥ፣ እና አስተሳሰብ ስጥ።
+                            መዝገቦችን እንዲሁም ውጤቶችን ተመልከትና በቀላሉ ግንኙነት መፍጠር ትችላለህ።
                         </StyledText>
                         <StyledBox>
                             <StyledLink to="/choose">
@@ -45,6 +45,12 @@ const Homepage = () => {
                                     Sign up
                                 </Link>
                             </StyledText>
+                            {/* Add a link to the About Us page */}
+                            <StyledLink to="/about-us">
+                                <Button variant="contained" fullWidth sx={{ mt: 2, mb: 3 }}>
+                                    About Us
+                                </Button>
+                            </StyledLink>
                         </StyledBox>
                     </StyledPaper>
                 </Grid>
